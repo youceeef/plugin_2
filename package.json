@@ -1,0 +1,12 @@
+{
+  "name": "what-if-animation-root",
+  "private": true,
+  "workspaces": [
+    "studio"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=what-if-studio",
+    "build": "npm run build --workspace=what-if-studio",
+    "lint": "npm run typecheck --workspace=what-if-studio"
+  }
+}

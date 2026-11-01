@@ -4,7 +4,9 @@
   "private": true,
   "description": "What If animation studio: one topic line in, a finished 15-25 s episode out. Every frame is SVG drawn in code (Remotion).",
   "scripts": {
-    "studio": "remotion studio src/index.ts --port 3430",
+    "dev": "remotion studio src/index.ts --port 3000 --no-open --ipv4",
+    "studio": "remotion studio src/index.ts --port 3000 --no-open --ipv4",
+    "build": "remotion bundle src/index.ts --out-dir ../dist",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
